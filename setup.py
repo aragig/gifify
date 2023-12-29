@@ -7,8 +7,9 @@ setup(
     description='PythonからFFmpegをコールして動画をGIFアニメーション化',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    author='Toshihiko ARai',
+    author='Toshihiko Arai',
     author_email='i.officearai@gmail.com',
+    license='MIT',
     url='https://github.com/aragig/gifify',
     install_requires=[
     ],
@@ -17,5 +18,5 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.9',
 )
