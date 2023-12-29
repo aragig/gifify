@@ -1,0 +1,2 @@
+# gifify
+PythonからFFmpegをコールして動画をGIFアニメーションにするパッケージ
