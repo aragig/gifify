@@ -1,20 +1,47 @@
 # gifify
-PythonからFFmpegをコールして動画をGIFアニメーションにするパッケージ
+
+OSにインストールされたFFmpegをコールして、動画をGIFアニメーションにするPythonパッケージです。subprocessでシェルにアクセスしますので事前にツールのインストールが必要です。
 
 
+
+## ツールの依存関係
+- [FFmpeg](https://ffmpeg.org/)
+- [gifsicle](https://www.lcdf.org/gifsicle/)
+
+
+### インストール
+~~~shell
+brew install ffmpeg
+brew install gifsicle
+~~~
+
+
+### バージョン
+
+| パッケージ | バージョン |
+|:-----------|:-----------|
+| FFmpeg     | 6.1        |
+| gifsicle   | 1.94       |
+
+~~~shell
+ffmpeg -version
+gifsicle --version
+~~~
+
+
+## gififyの使い方
+
+次は、GitHubからdevelopブランチの最新コミットのgififyをインストールする例です:
+
+~~~shell
 pip3 install git+https://github.com/aragig/gifify.git@develop
-pip3 install git+https://github.com/aragig/gifify@develop
+~~~
 
+次は、ローカルのgififyプロジェクトを直接インストールする例です:
 
+~~~shell
+cd gifify
+pip3 install -e .
+~~~
 
-~/Projects/gifify/ $ pip3 show gifify                                                       
-Name: gifify
-Version: 0.1.0
-Summary: PythonからFFmpegをコールして動画をGIFアニメーション化
-Home-page: https://github.com/aragig/gifify
-Author: Toshihiko ARai
-Author-email: i.officearai@gmail.com
-License: 
-Location: /opt/homebrew/lib/python3.11/site-packages
-Requires: 
-Required-by: 
+参考: https://101010.fun/programming/ffmepg-animation-gif.html
