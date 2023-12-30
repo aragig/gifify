@@ -10,10 +10,10 @@ OSにインストールされたFFmpegをコールして、動画をGIFアニメ
 
 
 ### インストール
-~~~shell
+```shell
 brew install ffmpeg
 brew install gifsicle
-~~~
+```
 
 
 ### バージョン
@@ -23,25 +23,25 @@ brew install gifsicle
 | FFmpeg     | 6.1        |
 | gifsicle   | 1.94       |
 
-~~~shell
+```shell
 ffmpeg -version
 gifsicle --version
-~~~
+```
 
 
 ## gififyの使い方
 
 次は、GitHubからdevelopブランチの最新コミットのgififyをインストールする例です:
 
-~~~shell
+```shell
 pip3 install git+https://github.com/aragig/gifify.git@develop
-~~~
+```
 
 次は、ローカルのgififyプロジェクトを直接インストールする例です:
 
-~~~shell
+```shell
 cd gifify
 pip3 install -e .
-~~~
+```
 
 参考: https://101010.fun/programming/ffmepg-animation-gif.html
